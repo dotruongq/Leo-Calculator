@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FPS Calculator</title>
+	<script type="text/javascript" src='jquery.js'></script>
+	<link rel="stylesheet" type="text/css" href="cal.css">
+
+</head>
+<body>
+	<header id="header" class="headbar">
+		<h1>Forgiveness Estimator</h1>
+	</header>
+	<div class="container">
+  		<form class='input_cal'>
+			  <div class="row">
+				    <div class="col-25">
+				      <label for="estloan">Total Loan</label>
+				    </div>
+
+				    <div class="col-75">
+				      <input type="number" id="estloan"  value="0" placeholder="0">
+				    </div>
+			  </div>
+
+
+			  <div class="row">
+			    <div class="col-25">
+			      <label for="term">Total Term</label>
+			    </div>
+			    <div class="col-75">
+			      <input type="number" id="term"  placeholder="240" value="240">
+			    </div>
+			  </div>
+
+
+			  <div class="row">
+			    <div class="col-25">
+			      <label for="recert">Recert fee</label>
+			    </div>
+			    <div class="col-75">
+			      <input type="number" id="recert" placeholder="Default 25" value="42">
+			    </div>
+			  </div>
+
+
+			  <div class="row">
+			    <div class="col-25">
+			      <label for="servicer">Servicer Repay</label>
+			    </div>
+			    <div class="col-75">
+			      <input type="number" id="servicer" placeholder="Default 0 " value="0">
+			    </div>
+			  </div>
+
+			  <div class="row">
+			    <div class="col-25">
+			      <label for="interest">Servicer Interest</label>
+			    </div>
+			    <div class="col-75">
+			      <input type="number" id="interest" placeholder="Default 4.19%" value="4.16">
+			    </div>
+			  </div>
+
+
+			  <div class="row">
+			    <div class="col-25">
+			      <label for="cus_pay">Customer Pay</label>
+			    </div>
+			    <div class="col-75">
+			      <input type="number" id="cus_pay" placeholder="Default 0" value="0">
+			    </div>
+			  </div>
+
+
+
+			  <div class="row">
+			    <div class="col-25">
+			      <label for="plan">Plan</label>
+			    </div>
+			    <div class="col-75">
+			      <select id="plan" >
+			        <option value="1345">Standard</option>
+			        <option value="1545">Rehab</option>
+			      </select>
+			    </div>
+			  </div>
+
+
+
+
+
+		</form>
+
+		<form class='input_cal'>
+			<div class="row">
+			    <div class="col-25">
+			      <label>Total Loan</label>
+			    </div>
+			    <div class="col-75">
+			      <span id="result_loan" >0</span>
+			    </div>
+			 </div>
+
+
+
+			<div class="row">
+			    <div class="col-25">
+			      <label>Total Loan +I%</label>
+			    </div>
+			    <div class="col-75">
+			      <span id="result_loanI" >0</span>
+			    </div>
+			 </div>
+
+			<div class="row">
+			    <div class="col-25">
+			      <label>Repayment</label>
+			    </div>
+			    <div class="col-75">
+			      <span id="result_repayment" >0</span>
+			    </div>
+			 </div>
+			
+			<div class="row">
+			    <div class="col-25">
+			      <label>Forgive</label>
+			    </div>
+			    <div class="col-75">
+			      <span id="result_forgive" >0</span>
+			    </div>
+			 </div> 
+
+
+			
+
+			 <div class="row">
+			    <div class="col-25">
+			      <label>Forgive %</label>
+			    </div>
+			    <div class="col-75">
+			      <span id="result_forgive_p" >0</span>
+			    </div>
+			 </div> 
+
+
+			 <div class="row">
+			    <div class="col-25">
+			      <label>Customer Current Term</label>
+			    </div>
+			    <div class="col-75">
+			      <span id="result_cus_pay_term" >0</span>
+			    </div>
+			 </div> 
+
+
+
+			 <div class="row">
+			    <div class="col-25">
+			      <label>Customer Pro Amount</label>
+			    </div>
+			    <div class="col-75">
+			      <span id="result_cus_pay_total" >0</span>
+			    </div>
+			 </div> 
+
+		</form>
+	</div>
+
+	
+	
+
+	<script type="text/javascript" src='calcss.js'></script>
+	<script type="text/javascript" src='cal.js'></script>
+</body>
+</html>
